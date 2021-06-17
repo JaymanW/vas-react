@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import './App.css';
+import './App.scss';
 
 // COMPONENTS
 import Header from './components/Header'
+import Landing from './components/Landing'
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
   return (
     <div className="App">
       <Header windowWidth={windowWidth}/>
-      {/* Landing */}
+      <Landing />
       {/* About */}
       {/* Work */}
       {/* Contact */}
