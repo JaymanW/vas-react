@@ -5,7 +5,7 @@ import './Header.css'
 
 function Header(props) {
     return (
-        <div className="Header">
+        <header className="Header">
             <a href="#" className="logo">Value Add <span className="logo-green">Services</span></a>
             {
                 props.windowWidth < 768 ? 
@@ -13,11 +13,11 @@ function Header(props) {
                     size="35"
                 />
                 :
-                <p>other text</p>
+                <nav>other text</nav>
             }
             
             
-        </div>
+        </header>
     )
 }
 
