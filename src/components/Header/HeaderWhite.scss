@@ -5,9 +5,10 @@ Header {
     right: 0;
     width: 100vw;
     z-index: 100;
+    box-shadow: 0 8px 6px -6px #999;
 }
 
-.Header {
+.HeaderWhite {
     margin: 0 auto;
     width: 85%;
     max-width: 1100px;
@@ -17,21 +18,21 @@ Header {
     align-items: center;
 }
 
-.Header .logo {
+.HeaderWhite .logo {
     font-family: 'Roboto';
     font-size: 1.1rem;
     text-decoration: none;
-    color: #fff;
+    color: #000;
     font-weight: 400;
 }
 
-.Header .logo-green {
+.HeaderWhite .logo-green {
     color: #27EE8E;
 }
 
 // Tablet (768px)
 @media only screen and (min-width: 768px) {
-    .Header {
+    .HeaderWhite {
         width: 85%;
         max-width: 1100px;
         height: 10vh;
@@ -40,11 +41,11 @@ Header {
         align-items: center;
     }
     
-    .Header .logo {
+    .HeaderWhite .logo {
         font-size: 1.5rem;
     }
 
-    .Header nav {
+    .HeaderWhite nav {
         width: 45%;
         max-width: 350px;
 
@@ -58,8 +59,8 @@ Header {
             & a {
                 font-size: 1.1rem;
                 text-decoration: none;
-                color: #cac9c9;
-                font-weight: 600;
+                color: rgb(39, 39, 39);
+                font-weight: 300;
                 font-family: "Roboto", sans-serif;
 
                 &:hover {
