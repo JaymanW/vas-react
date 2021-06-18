@@ -23,6 +23,7 @@
     color: #27EE8E;
 }
 
+// Tablet (768px)
 @media only screen and (min-width: 768px) {
     .Header {
         width: 85%;
@@ -36,4 +37,33 @@
     .Header .logo {
         font-size: 1.5rem;
     }
+
+    .Header nav {
+        width: 45%;
+        max-width: 350px;
+
+        & .menu {
+            width: 100%;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & a {
+                font-size: 1.1rem;
+                text-decoration: none;
+                color: #cac9c9;
+                font-weight: 600;
+                font-family: "Roboto", sans-serif;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
 }
+
+// @media only screen and (min-width: 992px) {
+
+// }   

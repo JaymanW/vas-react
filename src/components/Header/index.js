@@ -16,7 +16,19 @@ function Header(props) {
                     color="#fff"
                 />
                 :
-                <nav>other text</nav>
+                <nav>
+                    <ul className="menu">
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Our Work</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
             }
         </header>
     )
