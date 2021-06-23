@@ -13,7 +13,8 @@ Header {
     max-width: 1100px;
     height: 10vh;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -70,6 +71,48 @@ Header {
     }
 }
 
+@media only screen and (min-width: 992px) {
+    .Header {
+        width: 85%;
+        max-width: 1100px;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .Header .logo {
+        font-size: 1.7rem;
+    }
+
+    .Header nav {
+        width: 45%;
+        max-width: 350px;
+
+        & .menu {
+            width: 100%;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & a {
+                font-size: 1.1rem;
+                text-decoration: none;
+                color: #cac9c9;
+                font-weight: 600;
+                font-family: "Roboto", sans-serif;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
 // @media only screen and (min-width: 992px) {
 
 // }   
+
+// #0F0E0F

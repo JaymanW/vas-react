@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './App.scss';
 
 // COMPONENTS
+import Sidebar from './components/Sidebar'
 import Header from './components/Header'
 import Landing from './components/Landing'
 import About from './components/About'
@@ -11,6 +12,9 @@ function App() {
   const [windowWidth, setWindowWidth] = useState(null);
   const [windowScroll, setWindowScroll] = useState(0);
   const [newHeaderStyle, setNewHeaderStyle] = useState(false);
+  const [newBurgerStyle, setNewBurgerStyle] = useState(false);
+
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     updateWindowWidth();
@@ -24,7 +28,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (windowScroll >= 200) {
+    if (windowScroll >= 600) {
       setNewHeaderStyle(true);
     } else {
       setNewHeaderStyle(false);
@@ -35,6 +39,19 @@ function App() {
   //   console.log(newHeaderStyle)
   // }, [newHeaderStyle])
 
+  // useEffect(() => {
+  //   console.log(newBurgerStyle)
+  // }, [newBurgerStyle])
+
+   useEffect(() => {
+    console.log(isOpen)
+  }, [isOpen])
+
+  const handleOpen = () => {
+    setIsOpen(!isOpen);
+    setNewBurgerStyle(!newBurgerStyle);
+  }
+
   const updateWindowWidth = () => {
   const width = window.innerWidth;
   setWindowWidth(width);
@@ -42,12 +59,13 @@ function App() {
 
   return (
     <div className="App">
-      <Header windowWidth={windowWidth} newHeaderStyle={newHeaderStyle} />
-      <Landing />
-      <About />
-      {/* Work */}
-      {/* Contact */}
-      {/* Footer */}
+      <Sidebar isOpen={isOpen} onBurger={handleOpen} />
+        <Header windowWidth={windowWidth} newHeaderStyle={newHeaderStyle} newBurgerStyle={newBurgerStyle} onBurger={handleOpen} isOpen={isOpen} />
+        <Landing />
+        <About />
+        {/* Work */}
+        {/* Contact */}
+        {/* Footer */}
     </div>
   );
 }
