@@ -1,4 +1,70 @@
 .About {
-    height: 200vh;
-    background: yellow;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+
+    .About-cnt {
+        
+        img {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .About-text {
+            font-family: "Roboto", sans-serif;
+            width: 90%;
+            margin: 0 auto;
+            text-align: left;
+            margin-top: 1rem;
+            
+            h2 {
+                font-weight: 400;
+                text-align: center;
+            }
+
+            p {
+                margin-top: 0.5rem;
+                font-weight: 300;
+                text-align: center;
+            }
+
+            a {
+                color: #27EE8E;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .About-stats {
+        margin-top: 2rem;
+
+        .About-stats-cnt {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 50px;
+            }
+
+            .About-stats-cnt-text {
+                font-family: "Roboto", sans-serif;
+                margin-left: 0.75rem;
+
+                .stats-number {
+                    font-size: 1.4rem;
+                    font-weight: 300;
+                }
+
+                .stats-text {
+                    font-weight: 400;
+                }
+            }
+
+            &:nth-child(n+2) {
+                margin-top: 2rem;
+                margin-right: 0.5rem;
+            }
+        }
+    }
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import closeIcon from './close.png'
 
 import { SidebarContainer, SidebarWrapper, SidebarMenu, SidebarLink } from './SidebarElements'
 

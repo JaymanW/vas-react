@@ -36,15 +36,6 @@ export const SidebarWrapper = styled.div`
     color: #fff;
 `
 
-// display: grid;
-//     grid-template-columns: 1fr;
-//     grid-template-rows: repeat(6, 80px);
-//     text-align: center;
-
-// @media screen and (max-width: 480px) {
-//     grid-template-rows: repeat(6, 60px);
-// }
-
 export const SidebarMenu = styled.ul`
     display: flex;
     flex-direction: column;

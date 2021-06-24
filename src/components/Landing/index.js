@@ -8,7 +8,7 @@ function Landing() {
                     <h1>
                         <a href="#" className="logo">Value Add <span className="logo-green">Services</span></a>
                     </h1>
-                </div>
+            </div>
             <div className="landing-cnt"> 
                 <h2>Transform your <br className="line-break" /> kitchen</h2>
                 <div className="landing-btn-cnt">

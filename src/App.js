@@ -28,7 +28,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (windowScroll >= 600) {
+    if (windowScroll >= 500) {
       setNewHeaderStyle(true);
     } else {
       setNewHeaderStyle(false);
