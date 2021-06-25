@@ -1,5 +1,6 @@
 import React from 'react'
 import CountUp from 'react-countup'
+import VisibilitySensor from 'react-visibility-sensor'
 import './About.scss'
 
 function About() {
@@ -16,14 +17,30 @@ function About() {
                 <div className="About-stats-cnt">
                     <img src="./hammer150.png" />
                     <div className="About-stats-cnt-text">
-                        <p className="stats-number"><CountUp start={0} end={100} duration={5} />+</p>
+                        <p className="stats-number">
+                            <CountUp start={0} end={100} duration={5} redraw={true} >
+                            {({ countUpRef, start }) => (
+                                <VisibilitySensor onChange={start} delayedCall>
+                                    <span ref={countUpRef} />
+                                </VisibilitySensor>
+                            )}
+                            </CountUp>+
+                        </p>
                         <p className="stats-text">Kitchens Transformed</p>
                     </div>
                 </div>
                 <div className="About-stats-cnt">
                     <img src="./customers150.png" />
                     <div className="About-stats-cnt-text">
-                        <p className="stats-number"><CountUp start={0} end={100} duration={5} />+</p>
+                        <p className="stats-number">
+                            <CountUp start={0} end={100} duration={5} redraw={true} >
+                            {({ countUpRef, start }) => (
+                                <VisibilitySensor onChange={start} delayedCall>
+                                    <span ref={countUpRef} />
+                                </VisibilitySensor>
+                            )}
+                            </CountUp>+
+                        </p>
                         <p className="stats-text">Satisfied Customers</p>
                     </div>
                 </div>
