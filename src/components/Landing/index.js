@@ -14,7 +14,6 @@ function Landing() {
                 <div className="landing-btn-cnt">
                         <a href="#" className='btn-primary'>Our Work</a>
                         <a href="#" className='btn-secondary'>Contact Us</a>
-                    
                 </div>
             </div>
         </div>

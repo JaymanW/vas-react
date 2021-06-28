@@ -8,7 +8,7 @@ function About() {
         <div id="About">
             <div className='About-wrapper'>
                 <div className="About-cnt">
-                    <img src="./vas-employees.png" alt="Value Add Services employees" />
+                    <img src="./vas-employees.jpg" alt="Value Add Services employees" />
                     <div className="About-text">
                         <h2>About Us</h2>
                         <p>We are a light construction and remodeling company serving the southern Minnesota area for over 7 years. We partner with <a href="#">Kitchen Refresh</a> to provide beautiful, affordable kitchen remodeling options. As a small business, we are dedicated to providing personal and professional improvements to your home. Interested in learning more? <a href="#">Get in touch</a> with us.</p>

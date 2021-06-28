@@ -9,22 +9,22 @@ function Work() {
             <h2>Our Work</h2>
             <Carousel className="vas-carousel" infiniteLoop={true}>
                 <div>
-                    <img src="./kitchen1.png" />
+                    <img src="./kitchen1.jpg" />
                 </div>
                 <div>
-                    <img src="./kitchen2.png" />
+                    <img src="./kitchen2.jpg" />
                 </div>
                 <div>
-                    <img src="./kitchen3.png" />
+                    <img src="./kitchen3.jpg" />
                 </div>
                 <div>
-                    <img src="./kitchen4.png" />
+                    <img src="./kitchen4.jpg" />
                 </div>
                 <div>
-                    <img src="./kitchen5.png" />
+                    <img src="./kitchen5.jpg" />
                 </div>
                 <div>
-                    <img src="./kitchen6.png" />
+                    <img src="./kitchen6.jpg" />
                 </div>
             </Carousel>
         </div>
