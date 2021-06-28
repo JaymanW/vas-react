@@ -6,6 +6,7 @@ import Sidebar from './components/Sidebar'
 import Header from './components/Header'
 import Landing from './components/Landing'
 import About from './components/About'
+import Work from './components/Work'
 
 function App() {
 
@@ -63,7 +64,7 @@ function App() {
         <Header windowWidth={windowWidth} newHeaderStyle={newHeaderStyle} newBurgerStyle={newBurgerStyle} onBurger={handleOpen} isOpen={isOpen} />
         <Landing />
         <About />
-        {/* Work */}
+        <Work />
         {/* Contact */}
         {/* Footer */}
     </div>
