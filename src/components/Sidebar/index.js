@@ -10,9 +10,9 @@ function Sidebar(props) {
             </Icon> */}
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink href="#" onClick={props.onBurger} >About Us</SidebarLink>
-                    <SidebarLink href="#" onClick={props.onBurger} >Our Work</SidebarLink>
-                    <SidebarLink href="#" onClick={props.onBurger} >Contact Us</SidebarLink>
+                    <SidebarLink href="#About" onClick={props.onBurger} >About Us</SidebarLink>
+                    <SidebarLink href="#Work" onClick={props.onBurger} >Our Work</SidebarLink>
+                    <SidebarLink href="#Contact" onClick={props.onBurger} >Contact Us</SidebarLink>
                 </SidebarMenu>
             </SidebarWrapper>
         </SidebarContainer>

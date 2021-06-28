@@ -5,7 +5,7 @@ import './About.scss'
 
 function About() {
     return (
-        <div className="About">
+        <div id="About">
             <div className='About-wrapper'>
                 <div className="About-cnt">
                     <img src="./vas-employees.png" alt="Value Add Services employees" />

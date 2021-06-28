@@ -5,7 +5,7 @@ import './Work.scss'
 
 function Work() {
     return (
-        <div className="Work">
+        <div id="Work">
             <h2>Our Work</h2>
             <Carousel className="vas-carousel" infiniteLoop={true}>
                 <div>

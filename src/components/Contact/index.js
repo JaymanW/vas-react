@@ -18,7 +18,7 @@ function Contact({ windowWidth }) {
     }, [windowWidth])
     
     return (
-        <div className="Contact">
+        <div id="Contact">
             <div className="Contact-wrapper">
                 <h2>Contact Us</h2>
                 <p>Interested in our services? Want to learn more? Questions? Comments? Fill out the form below and we'll get back to you as soon as we can! You can also give us a call, or send us an email to get in touch.</p>
