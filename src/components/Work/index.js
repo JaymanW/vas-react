@@ -9,22 +9,22 @@ function Work() {
             <h2>Our Work</h2>
             <Carousel className="vas-carousel" infiniteLoop={true}>
                 <div>
-                    <img src="./kitchen1.jpg" />
+                    <img src="./kitchen1.jpg" alt="A completed kitchen remodeling by Value Add Services" />
                 </div>
                 <div>
-                    <img src="./kitchen2.jpg" />
+                    <img src="./kitchen2.jpg" alt="A completed kitchen remodeling by Value Add Services" />
                 </div>
                 <div>
-                    <img src="./kitchen3.jpg" />
+                    <img src="./kitchen3.jpg" alt="A completed kitchen remodeling by Value Add Services" />
                 </div>
                 <div>
-                    <img src="./kitchen4.jpg" />
+                    <img src="./kitchen4.jpg" alt="A completed kitchen remodeling by Value Add Services" />
                 </div>
                 <div>
-                    <img src="./kitchen5.jpg" />
+                    <img src="./kitchen5.jpg" alt="A completed kitchen remodeling by Value Add Services" />
                 </div>
                 <div>
-                    <img src="./kitchen6.jpg" />
+                    <img src="./kitchen6.jpg" alt="A completed kitchen remodeling by Value Add Services" />
                 </div>
             </Carousel>
         </div>

@@ -8,15 +8,15 @@ function About() {
         <div id="About">
             <div className='About-wrapper'>
                 <div className="About-cnt">
-                    <img src="./vas-employees.jpg" alt="Value Add Services employees" />
+                    <img src="./vas-employees.jpg" alt="Value Add Services employees" alt="Photo depicting some of Value Add Services' employees" />
                     <div className="About-text">
                         <h2>About Us</h2>
-                        <p>We are a light construction and remodeling company serving the southern Minnesota area for over 7 years. We partner with <a href="#">Kitchen Refresh</a> to provide beautiful, affordable kitchen remodeling options. As a small business, we are dedicated to providing personal and professional improvements to your home. Interested in learning more? <a href="#">Get in touch</a> with us.</p>
+                        <p>We are a light construction and remodeling company serving the southern Minnesota area for over 7 years. We partner with <a href="https://www.kitchenrefresh.net/" target="_blank" rel="noreferrer">Kitchen Refresh</a> to provide beautiful, affordable kitchen remodeling options. As a small business, we are dedicated to providing personal and professional improvements to your home. Interested in learning more? <a href="#Contact">Get in touch</a> with us.</p>
                     </div>
                 </div>
                 <div className="About-stats">
                     <div className="About-stats-cnt">
-                        <img src="./hammer150.png" />
+                        <img src="./hammer150.png" alt="icon displaying tools" />
                         <div className="About-stats-cnt-text">
                             <p className="stats-number">
                                 <CountUp start={0} end={100} duration={5} redraw={true} >
@@ -31,7 +31,7 @@ function About() {
                         </div>
                     </div>
                     <div className="About-stats-cnt">
-                        <img src="./customers150.png" />
+                        <img src="./customers150.png" alt="icon depicting customers"/>
                         <div className="About-stats-cnt-text">
                             <p className="stats-number">
                                 <CountUp start={0} end={100} duration={5} redraw={true} >
