@@ -1,0 +1,68 @@
+.Contact {
+    .Contact-wrapper {
+        width: 95%;
+        height: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+
+        h2 {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            text-align: center;
+            position: relative;
+            width: max-content;
+            margin: 0 auto;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 3px;
+                left: -10px;
+                height: 24px;
+                width: 6px;
+                background: #27EE8E;
+            }
+        }
+
+        & > p {
+            font-family: "Roboto", sans-serif;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .contact-icons {
+            margin-top: 2rem;
+
+            .contact-item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 40px;
+                }
+
+                p {
+                    font-family: "Roboto", sans-serif;
+                }
+
+                &:nth-child(2) {
+                    margin-top: 1.5rem;
+
+                    img {
+                        width: 25px;
+                    }
+                }
+            }
+        }
+
+        .vas-form {
+            max-width: 95vw;
+            margin: 0 auto;
+            margin-top: 2rem;
+        }
+    }
+    
+    
+}

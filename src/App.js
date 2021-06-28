@@ -7,6 +7,7 @@ import Header from './components/Header'
 import Landing from './components/Landing'
 import About from './components/About'
 import Work from './components/Work'
+import Contact from './components/Contact'
 
 function App() {
 
@@ -36,18 +37,6 @@ function App() {
     }
   }, [windowScroll])
 
-  // useEffect(() => {
-  //   console.log(newHeaderStyle)
-  // }, [newHeaderStyle])
-
-  // useEffect(() => {
-  //   console.log(newBurgerStyle)
-  // }, [newBurgerStyle])
-
-   useEffect(() => {
-    console.log(isOpen)
-  }, [isOpen])
-
   const handleOpen = () => {
     setIsOpen(!isOpen);
     setNewBurgerStyle(!newBurgerStyle);
@@ -65,7 +54,7 @@ function App() {
         <Landing />
         <About />
         <Work />
-        {/* Contact */}
+        <Contact />
         {/* Footer */}
     </div>
   );
