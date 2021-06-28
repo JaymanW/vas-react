@@ -1,0 +1,39 @@
+.Footer {
+    background: #27EE8E;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    p {
+        color: #fff;
+        font-family: "Roboto", sans-serif;
+        font-size: 0.7rem;
+    }
+
+    a {
+        color: #fff;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .Footer {
+        background: #27EE8E;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        p {
+            color: #fff;
+            font-family: "Roboto", sans-serif;
+            font-size: 0.9rem;
+        }
+    
+        a {
+            color: #fff;
+            font-weight: 600;
+        }
+    }
+}

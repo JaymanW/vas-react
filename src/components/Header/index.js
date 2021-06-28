@@ -5,8 +5,6 @@ import './Header.scss'
 import './HeaderWhite.scss'
 
 function Header(props) {
-    console.log(`newheaderstyle: ${props.newHeaderStyle}`)
-    console.log(`burger: ${props.newBurgerStyle}`)
     
     return (
         // <header style={{background: props.newHeaderStyle ? 'rgba(255, 255, 255, 1)' : 'none', boxShadow: props.newBurgerStyle ? 'none' : props.newHeaderStyle ? '0 8px 6px -6px #999' : 'none' }} >

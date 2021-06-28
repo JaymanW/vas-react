@@ -8,6 +8,7 @@ import Landing from './components/Landing'
 import About from './components/About'
 import Work from './components/Work'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -54,8 +55,8 @@ function App() {
         <Landing />
         <About />
         <Work />
-        <Contact />
-        {/* Footer */}
+        <Contact windowWidth={windowWidth} />
+        <Footer />
     </div>
   );
 }

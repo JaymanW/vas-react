@@ -1,7 +1,22 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './Contact.scss'
 
-function Contact() {
+function Contact({ windowWidth }) {
+    const [formSize, setFormSize] = useState(1300);
+    
+    useEffect(() => {
+        if (windowWidth < 400) {
+            setFormSize(1300)
+            // console.log(windowWidth);
+            console.log(formSize);
+        } else if (windowWidth <= 768) {
+            setFormSize(1000)
+            // console.log(windowWidth);
+            console.log(formSize);
+        }
+        // console.log(windowWidth);
+    }, [windowWidth])
+    
     return (
         <div className="Contact">
             <div className="Contact-wrapper">
@@ -17,7 +32,7 @@ function Contact() {
                         <p>(507) 358-9520</p>
                     </div>
                 </div>
-                <iframe className="vas-form" src="https://docs.google.com/forms/d/e/1FAIpQLSf7w-pLHIvNsak4LdzfQfWT1d08USZ3AHBJicK5ZJml2vhL2A/viewform?embedded=true" width="640" height="1300" frameborder="0" id="contact-form">Loading…</iframe>
+                <iframe className="vas-form" src="https://docs.google.com/forms/d/e/1FAIpQLSf7w-pLHIvNsak4LdzfQfWT1d08USZ3AHBJicK5ZJml2vhL2A/viewform?embedded=true" width="640" height={formSize} frameborder="0" id="contact-form">Loading…</iframe>
             </div>
         </div>
     )
